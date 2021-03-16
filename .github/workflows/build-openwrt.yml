@@ -11,9 +11,9 @@
 name: Build OpenWrt
 
 on:
+  repository_dispatch:
   watch:
     types: started
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
